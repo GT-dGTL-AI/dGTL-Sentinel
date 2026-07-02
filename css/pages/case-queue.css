@@ -1,0 +1,43 @@
+.queue-filters {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.queue-filters .filter-select { min-width: 150px; }
+
+.filter-reset {
+  font-size: var(--text-xs);
+  color: var(--text-tertiary);
+  font-weight: var(--weight-medium);
+}
+.filter-reset:hover { color: var(--brand); }
+
+.data-table td.col-policyholder { min-width: 200px; }
+.data-table td.col-scenario { min-width: 220px; }
+
+.analyst-pick-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  max-height: 320px;
+  overflow-y: auto;
+}
+
+.analyst-pick-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: border-color var(--duration-fast), background var(--duration-fast);
+}
+.analyst-pick-item:hover { background: var(--surface-sunken); }
+.analyst-pick-item.is-selected { border-color: var(--brand); background: var(--brand-soft); }
+.analyst-pick-item__meta { flex: 1; }
+.analyst-pick-item__name { font-size: var(--text-sm); font-weight: var(--weight-semibold); }
+.analyst-pick-item__role { font-size: 11.5px; color: var(--text-tertiary); }
+.analyst-pick-item__load { font-size: 11px; color: var(--text-tertiary); }

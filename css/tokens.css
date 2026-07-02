@@ -1,0 +1,136 @@
+/* ==========================================================================
+   dGTL Sentinel — Design Tokens
+   GT purple brand system + neutral slate scale + strict risk severity scale
+   ========================================================================== */
+
+:root {
+  /* Brand — GT Purple */
+  --purple-50:  #F6F2FC;
+  --purple-100: #ECE3F9;
+  --purple-200: #D6C2F0;
+  --purple-300: #B896E3;
+  --purple-400: #9A6BD6;
+  --purple-500: #7C3EC4;
+  --purple-600: #6428A8;
+  --purple-700: #4F1F87;
+  --purple-800: #3B1866;
+  --purple-900: #281045;
+
+  --brand: var(--purple-600);
+  --brand-hover: var(--purple-700);
+  --brand-soft: var(--purple-50);
+  --brand-soft-strong: var(--purple-100);
+
+  /* Neutrals — Slate / Charcoal */
+  --slate-0:   #FFFFFF;
+  --slate-25:  #FBFAFC;
+  --slate-50:  #F6F5F8;
+  --slate-100: #EEEDF2;
+  --slate-150: #E4E2EA;
+  --slate-200: #D7D4DF;
+  --slate-300: #BAB6C6;
+  --slate-400: #948EA4;
+  --slate-500: #726C84;
+  --slate-600: #574F6B;
+  --slate-700: #423C54;
+  --slate-800: #2E293C;
+  --slate-900: #1C1826;
+
+  /* Surface */
+  --surface-page: #F7F6FA;
+  --surface-card: var(--slate-0);
+  --surface-sunken: var(--slate-50);
+  --surface-overlay: rgba(28, 24, 38, 0.55);
+  --border-subtle: var(--slate-150);
+  --border-default: var(--slate-200);
+
+  /* Text */
+  --text-primary: var(--slate-900);
+  --text-secondary: var(--slate-600);
+  --text-tertiary: var(--slate-400);
+  --text-inverse: #FFFFFF;
+  --text-brand: var(--purple-600);
+
+  /* Risk Severity Scale — strictly reserved for risk indicators (1–5) */
+  --risk-1: #4C9A6A;   /* Minimal  */
+  --risk-1-bg: #EAF6EE;
+  --risk-2: #7FA83B;   /* Low      */
+  --risk-2-bg: #F1F7E4;
+  --risk-3: #D69A1F;   /* Moderate */
+  --risk-3-bg: #FCF3DD;
+  --risk-4: #DB7A2C;   /* High     */
+  --risk-4-bg: #FCEADA;
+  --risk-5: #C43D3D;   /* Critical */
+  --risk-5-bg: #FBE4E4;
+
+  /* Semantic */
+  --success: #3E8F5C;
+  --success-bg: #E9F6EE;
+  --warning: #C68A1E;
+  --warning-bg: #FBF1DC;
+  --danger: #C43D3D;
+  --danger-bg: #FBE4E4;
+  --info: #3868C4;
+  --info-bg: #E9EFFB;
+
+  /* Typography */
+  --font-sans: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
+
+  --text-xs:   0.75rem;
+  --text-sm:   0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md:   1.0625rem;
+  --text-lg:   1.25rem;
+  --text-xl:   1.5rem;
+  --text-2xl:  1.875rem;
+  --text-3xl:  2.375rem;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+
+  --leading-tight: 1.2;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-full: 999px;
+
+  /* Shadow — soft elevation only */
+  --shadow-xs: 0 1px 2px rgba(28, 24, 38, 0.04);
+  --shadow-sm: 0 1px 3px rgba(28, 24, 38, 0.06), 0 1px 2px rgba(28, 24, 38, 0.04);
+  --shadow-md: 0 4px 12px rgba(28, 24, 38, 0.08), 0 1px 3px rgba(28, 24, 38, 0.05);
+  --shadow-lg: 0 12px 32px rgba(28, 24, 38, 0.12), 0 2px 8px rgba(28, 24, 38, 0.06);
+  --shadow-focus: 0 0 0 3px rgba(124, 62, 196, 0.25);
+
+  /* Layout */
+  --sidebar-width: 264px;
+  --sidebar-width-collapsed: 76px;
+  --topbar-height: 68px;
+  --content-max-width: 1440px;
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 340ms;
+}

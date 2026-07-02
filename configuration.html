@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Configuration · dGTL Sentinel</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22><rect width=24 height=24 rx=6 fill=%22%236428A8%22/></svg>" />
+<link rel="stylesheet" href="css/tokens.css" />
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/layout.css" />
+<link rel="stylesheet" href="css/components.css" />
+<link rel="stylesheet" href="css/charts.css" />
+<link rel="stylesheet" href="css/animations.css" />
+<link rel="stylesheet" href="css/pages/configuration.css" />
+</head>
+<body data-page="configuration">
+<a href="#page-root" class="skip-link">Skip to content</a>
+<div id="app"></div>
+
+<script src="js/utils/dom.js"></script>
+<script src="js/utils/formatters.js"></script>
+<script src="js/utils/riskScoring.js"></script>
+<script src="js/utils/id.js"></script>
+<script src="js/data/nameData.js"></script>
+<script src="js/data/seed.js"></script>
+<script src="js/state/store.js"></script>
+<script src="js/services/dataService.js"></script>
+<script src="js/services/notificationService.js"></script>
+<script src="js/services/aiInsightService.js"></script>
+<script src="js/services/exportService.js"></script>
+<script src="js/components/icons.js"></script>
+<script src="js/components/badge.js"></script>
+<script src="js/components/table.js"></script>
+<script src="js/components/skeleton.js"></script>
+<script src="js/components/toast.js"></script>
+<script src="js/components/modal.js"></script>
+<script src="js/components/charts/lineChart.js"></script>
+<script src="js/components/charts/barChart.js"></script>
+<script src="js/components/charts/donutChart.js"></script>
+<script src="js/components/shell.js"></script>
+<script src="js/pages/configuration.js"></script>
+<script>
+  window.SentinelShell.mountApp("configuration", window.SentinelPages.configuration.render);
+</script>
+</body>
+</html>
